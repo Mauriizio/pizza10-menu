@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #f4f4f5;
+  background: #09090b;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html { scroll-behavior: smooth; background: #09090b; }
+body { margin: 0; min-width: 320px; background: radial-gradient(circle at 50% 0%, #241007 0, #09090b 34rem); }
+body::before { content: ""; position: fixed; inset: 0; pointer-events: none; opacity: .45; background-image: radial-gradient(circle, rgba(255,255,255,.65) 1px, transparent 1px); background-size: 47px 47px; mask-image: linear-gradient(to bottom, black, transparent 65%); }
+a { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid #a3e635; outline-offset: 3px; }
+
+.hero { isolation: isolate; overflow: hidden; border-bottom: 1px solid rgba(255,255,255,.08); background-image: url('/images/hero-mobile.png'); background-repeat: no-repeat; background-size: cover; background-position: center top; }
+.hero::before { content: ""; position: absolute; z-index: -1; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(0,0,0,.82) 0%, rgba(0,0,0,.64) 62%, rgba(0,0,0,.28) 100%), linear-gradient(0deg, #09090b 0%, rgba(9,9,11,.66) 28%, transparent 60%); }
+.brand-logo { display: block; width: clamp(13.125rem, 72vw, 18.125rem); height: auto; object-fit: contain; object-position: left center; }
+.glass-panel { border: 1px solid rgba(255,255,255,.1); border-radius: 1.5rem; padding: 1.25rem; background: rgba(9,9,11,.72); box-shadow: 0 24px 80px rgba(0,0,0,.24); backdrop-filter: blur(14px); }
+.eyebrow { font-size: .72rem; line-height: 1rem; font-weight: 900; text-transform: uppercase; letter-spacing: .18em; color: #fb923c; }
+.section-shell { max-width: 72rem; margin-inline: auto; padding: 3.5rem 1rem 0; }
+.section-title { margin-top: .35rem; font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.1; font-weight: 950; letter-spacing: -.035em; color: white; }
+.product-card { position: relative; display: flex; min-height: 100%; flex-direction: column; border: 1px solid rgba(255,255,255,.09); border-radius: 1.35rem; padding: 1.25rem; background: linear-gradient(145deg, rgba(39,39,42,.8), rgba(9,9,11,.86)); box-shadow: 0 18px 50px rgba(0,0,0,.16); }
+.product-card > :last-child { margin-top: auto; padding-top: 1.25rem; }
+.featured-card { border-color: rgba(249,115,22,.48); background: radial-gradient(circle at 90% 0, rgba(251,191,36,.11), transparent 45%), linear-gradient(145deg, rgba(67,20,7,.82), rgba(9,9,11,.9)); box-shadow: 0 18px 60px rgba(234,88,12,.11); }
+.verification-badge { max-width: 7rem; border: 1px solid rgba(250,204,21,.25); border-radius: 9999px; padding: .3rem .55rem; text-align: center; font-size: .65rem; line-height: .9rem; font-weight: 800; color: #fde68a; background: rgba(234,179,8,.08); }
+.button { display: inline-flex; min-height: 3rem; align-items: center; justify-content: center; gap: .55rem; border-radius: .85rem; padding: .75rem 1rem; font-size: .9rem; font-weight: 850; transition: transform .15s ease, background-color .15s ease, border-color .15s ease; }
+.button:active { transform: scale(.98); }
+.button-secondary { border: 1px solid rgba(255,255,255,.18); color: white; background: #18181b; }
+.button-secondary:hover { background: #27272a; border-color: rgba(255,255,255,.3); }
+.button-primary { color: #142000; background: #a3e635; box-shadow: 0 8px 30px rgba(132,204,22,.16); }
+.button-primary:hover { background: #bef264; }
+.contact-bar { position: fixed; z-index: 50; left: 0; right: 0; bottom: 0; grid-template-columns: .78fr 1.4fr; gap: .55rem; border-top: 1px solid rgba(255,255,255,.12); padding: .65rem .75rem max(.65rem, env(safe-area-inset-bottom)); background: rgba(9,9,11,.94); backdrop-filter: blur(18px); }
+.contact-bar .button { padding-inline: .7rem; white-space: nowrap; }
+.scrollbar-none { scrollbar-width: none; }
+.scrollbar-none::-webkit-scrollbar { display: none; }
+footer { margin-top: 4rem; padding-bottom: calc(5rem + env(safe-area-inset-bottom)); }
+
+@media (min-width: 640px) { .section-shell { padding-inline: 1.5rem; padding-top: 4.5rem; } .product-card { padding: 1.5rem; } }
+@media (min-width: 768px) { .hero { background-image: url('/images/hero-desktop.png'); background-position: right top; } .hero::before { background: linear-gradient(90deg, rgba(0,0,0,.88) 0%, rgba(0,0,0,.7) 42%, rgba(0,0,0,.38) 70%, rgba(0,0,0,.48) 100%), linear-gradient(0deg, #09090b 0%, rgba(9,9,11,.48) 24%, transparent 56%); } .brand-logo { width: clamp(20rem, 31vw, 30rem); } footer { padding-bottom: 0; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
