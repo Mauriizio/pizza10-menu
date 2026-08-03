@@ -3,27 +3,20 @@ import { formatPrice } from '../../utils/formatPrice'
 
 export function ProductCard({ product }: { product: MenuProduct }) {
   return (
-    <article className={`product-card ${product.featured ? 'featured-card' : ''}`}>
-      <div className="flex items-start justify-between gap-3">
-        <div>
-          {product.featured && <p className="eyebrow mb-2">Especial de la casa</p>}
-          <h3 className="text-xl font-black tracking-tight text-white">{product.name}</h3>
+    <article className={`product-row ${product.featured ? 'featured-product' : ''}`}>
+      <div className="product-copy">
+        {product.featured ? <p className="house-special">Especial de la casa</p> : null}
+        <div className="product-heading">
+          <h3>{product.name}</h3>
+          <span aria-hidden="true" />
+          <p className="price">{formatPrice(product.price)}</p>
         </div>
-        {product.priceVerificationRequired && <span className="verification-badge">Precio por confirmar</span>}
+        {product.familySize ? <p className="family-label">Tamaño familiar</p> : null}
+        {product.description ? <p className="description">{product.description}</p> : null}
+        {product.presentation ? <p className="detail"><strong>Presentación:</strong> {product.presentation}</p> : null}
+        {product.options ? <p className="detail"><strong>{product.optionsLabel}:</strong> {product.options.join(', ')}.</p> : null}
+        {product.priceVerificationRequired ? <p className="verification-note">Precio por confirmar</p> : null}
       </div>
-      {product.familySize && <p className="mt-2 text-xs font-bold uppercase tracking-[0.12em] text-amber-300">Tamaño familiar</p>}
-      {product.description && <p className="mt-3 text-sm leading-6 text-zinc-300">{product.description}</p>}
-      {product.presentation && (
-        <p className="mt-3 text-sm leading-6 text-zinc-300">
-          <span className="font-bold text-zinc-100">Presentación:</span> {product.presentation}
-        </p>
-      )}
-      {product.options && (
-        <p className="mt-3 text-sm leading-6 text-zinc-300">
-          <span className="font-bold text-zinc-100">{product.optionsLabel}:</span> {product.options.join(', ')}.
-        </p>
-      )}
-      <p className="mt-5 text-xl font-black text-orange-300">{formatPrice(product.price)}</p>
     </article>
   )
 }
