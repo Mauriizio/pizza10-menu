@@ -9,9 +9,9 @@ export interface MenuProduct {
   category: Exclude<CategoryId, 'adicionales'>
   featured?: boolean
   familySize?: boolean
-  priceVerificationRequired?: boolean
   optionsLabel?: string
   options?: string[]
+  iconSrc?: string
 }
 
 export interface MenuCategory {

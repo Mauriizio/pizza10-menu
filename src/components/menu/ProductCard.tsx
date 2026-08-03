@@ -4,6 +4,11 @@ import { formatPrice } from '../../utils/formatPrice'
 export function ProductCard({ product }: { product: MenuProduct }) {
   return (
     <article className={`product-row ${product.featured ? 'featured-product' : ''}`}>
+      {product.iconSrc ? (
+        <span className="product-icon">
+          <img src={product.iconSrc} alt="" width="128" height="128" loading={product.featured ? 'eager' : 'lazy'} decoding="async" />
+        </span>
+      ) : null}
       <div className="product-copy">
         {product.featured ? <p className="house-special">Especial de la casa</p> : null}
         <div className="product-heading">
@@ -15,7 +20,6 @@ export function ProductCard({ product }: { product: MenuProduct }) {
         {product.description ? <p className="description">{product.description}</p> : null}
         {product.presentation ? <p className="detail"><strong>Presentación:</strong> {product.presentation}</p> : null}
         {product.options ? <p className="detail"><strong>{product.optionsLabel}:</strong> {product.options.join(', ')}.</p> : null}
-        {product.priceVerificationRequired ? <p className="verification-note">Precio por confirmar</p> : null}
       </div>
     </article>
   )

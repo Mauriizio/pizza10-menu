@@ -7,10 +7,10 @@ Este documento complementa el brief original sin reemplazarlo.
 - El mensaje confirmado es: `Hola, vengo del menú web de PIZZA 10 y quiero realizar un pedido.`
 - Los precios se almacenan como enteros y se muestran con puntos y la palabra `pesos`, por ejemplo `10.000 pesos`.
 - Todas las pizzas son de tamaño familiar.
-- Pizza Planeta y Pizza Cósmica cuestan provisionalmente 20.000 pesos y son los únicos precios pendientes de confirmar.
+- Pizza Planeta y Pizza Cósmica cuestan definitivamente 20.000 pesos. No existen precios pendientes de confirmar.
 - Cada adicional cuesta individualmente 3.500 pesos.
 - Las opciones, sabores y rellenos mantienen el precio publicado, sin recargos ni variantes.
 - Focaccia pertenece a Panadería.
 - No se mencionan tarifas, zonas, distancias ni condiciones especiales del delivery. Solo se muestra `Solo pedidos a domicilio y retiro en tienda`.
 - `Pizzalate`, `Croissant` y el sabor `parchita` están confirmados tal como fueron entregados.
-- Se integraron `logotipo.png`, `hero-mobile.png` y `hero-desktop.png`. El pendón continúa siendo únicamente una referencia y no forma parte del sitio público.
+- Se integraron `logotipo.png`, `header-mobile.png`, `header-desktop.png` y los nueve íconos numerados del menú. El pendón y la imagen objetivo continúan siendo únicamente referencias y no forman parte del sitio público.

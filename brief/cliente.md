@@ -68,13 +68,11 @@ Base de pizza italiana con pollo a la bechamel, mozzarella, orégano y maíz.
 
 #### 3. Pizza Planeta
 Base de pizza italiana con mozzarella, orégano, peperoni y bordes rellenos de queso derretido.  
-**Precio indicado:** $20.000 pesos  
-**Pendiente:** confirmar con el cliente, porque el texto original decía “$2.0000”.
+**Precio confirmado:** $20.000 pesos
 
 #### 4. Pizza Cósmica
 Base de pizza italiana con salsa agridulce, pollo, maíz, orégano y mozzarella.  
-**Precio indicado:** $20.000 pesos  
-**Pendiente:** confirmar con el cliente, porque el texto original decía “$2.0000”.
+**Precio confirmado:** $20.000 pesos
 
 #### 5. Pizza Platillo
 Base de pizza italiana con salsa bechamel, pollo, maíz, mozzarella, orégano y borde relleno de queso.  
@@ -203,15 +201,8 @@ El menú puede implementarse como un sitio estático con los productos definidos
 
 ## 8. Datos pendientes de confirmar
 
-1. Confirmar si Pizza Planeta cuesta $20.000.
-2. Confirmar si Pizza Cósmica cuesta $20.000.
-3. Confirmar si “Pizzalate” es el nombre comercial definitivo.
-4. Confirmar si “Croissant” es la escritura que desea usar.
-5. Confirmar si el sabor correcto es “parchita”.
-6. Confirmar si el teléfono debe mostrarse con prefijo internacional `+58`.
-7. Confirmar el mensaje inicial que debe abrir WhatsApp.
-8. Confirmar si el negocio ya tiene Instagram o redes sociales.
-9. Confirmar el dominio o URL definitiva antes de generar el QR para impresión.
+1. Confirmar si el negocio ya tiene Instagram o redes sociales.
+2. Confirmar el dominio o URL definitiva antes de generar el QR para impresión.
 
 ---
 

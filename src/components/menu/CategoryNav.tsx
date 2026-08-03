@@ -5,7 +5,7 @@ const icons = { pizzas: Pizza, adicionales: CirclePlus, postres: CakeSlice, pana
 
 export function CategoryNav() {
   return (
-    <nav className="category-nav" aria-label="Categorías del menú">
+    <nav className="category-nav" id="categorias" aria-label="Categorías del menú">
       <div>
         {categories.map((category, index) => {
           const Icon = icons[category.id]

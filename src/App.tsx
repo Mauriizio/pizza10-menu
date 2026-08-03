@@ -1,4 +1,4 @@
-import { Info } from 'lucide-react'
+import { Info, Menu } from 'lucide-react'
 import { BusinessDetails } from './components/business/BusinessDetails'
 import { ContactActions } from './components/contact/ContactActions'
 import { AddOnsSection } from './components/menu/AddOnsSection'
@@ -15,12 +15,11 @@ export default function App() {
     <div className="site-shell">
       <header className="site-header">
         <div className="header-inner">
+          <a className="nav-control" href="#categorias" aria-label="Ir a las categorías del menú">
+            <Menu aria-hidden="true" size={24} />
+          </a>
           <a className="brand" href="#inicio" aria-label="PIZZA 10, ir al inicio">
-            <img src="/images/logotipo.png" alt="Logotipo de PIZZA 10" width="1536" height="1024" />
-            <span>
-              <strong>PIZZA 10</strong>
-              <small>{business.slogan}</small>
-            </span>
+            <img src="/images/logotipo.png" alt="PIZZA 10" width="1536" height="1024" />
           </a>
           <a className="info-link" href="#informacion">
             <Info aria-hidden="true" size={20} />

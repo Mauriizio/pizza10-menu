@@ -21,7 +21,7 @@
 - No agregar CTA dentro de tarjetas de producto.
 - Mostrar precios como `10.000 pesos`: sin `$`, códigos de moneda, comas ni decimales.
 - Todas las pizzas son familiares y deben mostrar `Tamaño familiar`.
-- Pizza Planeta y Pizza Cósmica usan provisionalmente 20.000 pesos y conservan `priceVerificationRequired: true` hasta confirmación.
+- Pizza Planeta y Pizza Cósmica tienen precio confirmado de 20.000 pesos; no existen precios pendientes de confirmación.
 - Cada adicional cuesta individualmente 3.500 pesos.
 - No crear recargos ni variantes de precio para opciones, sabores o rellenos.
 - Las categorías son Pizzas, Adicionales, Postres y Panadería. Focaccia pertenece a Panadería.

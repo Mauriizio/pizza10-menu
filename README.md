@@ -57,8 +57,8 @@ Cuando se autorice, importa el repositorio en Vercel. El framework debería dete
 
 Los PNG públicos se encuentran en `public/images/` y Vite los copia sin modificaciones a `dist/images/`. Para esta primera versión se conservan los PNG originales. Antes del lanzamiento definitivo mediante QR conviene generar alternativas WebP o AVIF y servirlas con fallback PNG para reducir la transferencia en redes móviles.
 
-## Datos pendientes de confirmar
+## Datos confirmados
 
-- Precio definitivo de Pizza Planeta (provisional: 20.000 pesos).
-- Precio definitivo de Pizza Cósmica (provisional: 20.000 pesos).
-- Dominio o URL definitiva antes de producir el QR.
+- Pizza Planeta cuesta 20.000 pesos.
+- Pizza Cósmica cuesta 20.000 pesos.
+- No existen precios pendientes de confirmación.
