@@ -14,3 +14,12 @@ Este documento complementa el brief original sin reemplazarlo.
 - No se mencionan tarifas, zonas, distancias ni condiciones especiales del delivery. Solo se muestra `Solo pedidos a domicilio y retiro en tienda`.
 - `Pizzalate`, `Croissant` y el sabor `parchita` están confirmados tal como fueron entregados.
 - Se integraron `logotipo.png`, `header-mobile.png`, `header-desktop.png` y los nueve íconos numerados del menú. El pendón y la imagen objetivo continúan siendo únicamente referencias y no forman parte del sitio público.
+
+## Cierre del proyecto
+
+- Proyecto terminado y entregado al cliente.
+- Producción: https://pizza10-menu.vercel.app
+- URL estable del QR: https://pizza10-menu.vercel.app/qr
+- Entregables finales archivados en referencias/qrs/
+- No existen cambios funcionales pendientes.
+- No modificar la URL /qr porque está impresa en materiales físicos.
