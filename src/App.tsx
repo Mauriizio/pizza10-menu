@@ -1,5 +1,5 @@
-import { Info } from 'lucide-react'
 import { BusinessDetails } from './components/business/BusinessDetails'
+import { BusinessTicker } from './components/business/BusinessTicker'
 import { ContactActions } from './components/contact/ContactActions'
 import { AddOnsSection } from './components/menu/AddOnsSection'
 import { CategoryNav } from './components/menu/CategoryNav'
@@ -12,17 +12,9 @@ const byCategory = (category: 'pizzas' | 'postres' | 'panaderia') =>
 export default function App() {
   return (
     <div className="site-shell">
+      <BusinessTicker />
       <header className="site-header">
-        <div className="header-inner">
-          <a className="brand" href="#inicio" aria-label="PIZZA 10, ir al inicio">
-            <img src="/images/logotipo.png" alt="PIZZA 10" width="1536" height="1024" />
-          </a>
-          <img className="header-wordmark" src="/images/only-text.png" alt="" width="1536" height="1024" />
-          <a className="info-link" href="#informacion">
-            <Info aria-hidden="true" size={16} strokeWidth={1.8} />
-            Ver info
-          </a>
-        </div>
+        <img className="header-logo" src="/images/logo-con-slogan.png" alt="PIZZA 10 — Sabor de otro planeta" width="1536" height="1024" />
       </header>
 
       <main id="inicio">
