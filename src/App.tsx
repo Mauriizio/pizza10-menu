@@ -17,9 +17,9 @@ export default function App() {
           <a className="brand" href="#inicio" aria-label="PIZZA 10, ir al inicio">
             <img src="/images/logotipo.png" alt="PIZZA 10" width="1536" height="1024" />
           </a>
-          <img className="text-logo" src="/images/text-logo.png" alt="" width="1536" height="1024" />
+          <img className="header-wordmark" src="/images/only-text.png" alt="" width="1536" height="1024" />
           <a className="info-link" href="#informacion">
-            <Info aria-hidden="true" size={20} />
+            <Info aria-hidden="true" size={16} strokeWidth={1.8} />
             Ver info
           </a>
         </div>
