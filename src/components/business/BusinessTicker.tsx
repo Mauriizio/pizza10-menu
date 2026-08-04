@@ -4,6 +4,9 @@ const tickerItems = [
   { label: 'DIRECCIÓN', value: business.address },
   { label: 'HORARIO', value: business.hours },
   { label: 'SERVICIO', value: business.service },
+  { label: 'HAZ TU PEDIDO POR WHATSAPP' },
+  { label: 'TAMBIÉN ATENDEMOS LLAMADAS' },
+  { label: 'PIDE HOY Y DISFRUTA UN SABOR DE OTRO PLANETA' },
 ]
 
 function TickerSequence({ duplicate = false }: { duplicate?: boolean }) {
@@ -11,8 +14,8 @@ function TickerSequence({ duplicate = false }: { duplicate?: boolean }) {
     <span className="ticker-sequence" aria-hidden={duplicate ? 'true' : undefined}>
       {tickerItems.map((item) => (
         <span className="ticker-item" key={item.label}>
-          <span className="ticker-label">{item.label}:</span>{' '}
-          <span>{item.value}</span>
+          <span className="ticker-label">{item.label}{item.value ? ':' : ''}</span>
+          {item.value ? <span>{item.value}</span> : null}
           <span className="ticker-separator" aria-hidden="true">•</span>
         </span>
       ))}

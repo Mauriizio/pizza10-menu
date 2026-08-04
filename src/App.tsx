@@ -14,7 +14,9 @@ export default function App() {
     <div className="site-shell">
       <BusinessTicker />
       <header className="site-header">
-        <img className="header-logo" src="/images/logo-con-slogan.png" alt="PIZZA 10 — Sabor de otro planeta" width="1536" height="1024" />
+        <div className="header-logo-frame">
+          <img className="header-logo" src="/images/logo-con-slogan.png" alt="PIZZA 10 — Sabor de otro planeta" width="1536" height="1024" />
+        </div>
       </header>
 
       <main id="inicio">
