@@ -3,7 +3,7 @@ import { formatPrice } from '../../utils/formatPrice'
 
 export function ProductCard({ product }: { product: MenuProduct }) {
   return (
-    <article className={`product-row ${product.featured ? 'featured-product' : ''}`}>
+    <article className={`product-row ${product.iconSrc ? 'with-icon' : ''} ${product.featured ? 'featured-product' : ''}`}>
       {product.iconSrc ? (
         <span className="product-icon">
           <img src={product.iconSrc} alt="" width="128" height="128" loading={product.featured ? 'eager' : 'lazy'} decoding="async" />
